@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-color: white;
+}
+
+body.dark {
+    background-color: #14213d;
+    color: white;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #000000;
+    z-index: 100;
+}
+
+nav .nav-bar {
+    position: relative;
+    height: 100%;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav .nav-bar .sideBarOpen {
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+nav .nav-bar .logo a {
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+.menu .logo-toggle {
+    display: none;
+}
+
+.nav-bar .nav-likns {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .nav-likns li {
+    margin: 0 8px;
+    list-style: none;
+}
+
+.nav-likns li a {
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.nav-likns li a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0;
+    transition: all 0.3 ease;
+}
+
+.nav-likns li:hover a::before {
+    opacity: 1;
+}
+
+.nav-bar .night-mode {
+    display: flex;
+    align-items: center;
+}
+
+.night-mode .dark-light {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.dark-light i {
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dark-light i.sun {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dark-light.active i.sun {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dark-light.active i.moon {
+    opacity: 0;
+    pointer-events: none;
+}
+
+header {
+    width: 100%;
+    margin-top: 70px;
+    padding: 100px 0 400px 0;
+    text-align: center;
+    color: white;
+    background-image: url(https://futureentech.com/wp-content/uploads/2020/09/Modern-Office.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header p {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+header .btn-header {
+    border-radius: 10px;
+    background-color: #fca311;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+article {
+    width: 100%;
+    text-align: center;
+    padding: 150px 0px;
+}
+
+article hr {
+    width: 20%;
+    margin: auto;
+}
+
+article p {
+    width: 40%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#service {
+    width: 100%;
+    text-align: center;
+    padding: 100px 0px;
+    background-color: #e5e5e5;
+    color: black;
+}
+
+.service-section p {
+    width: 40%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+
+}
+
+
+.service-container i {
+    font-size: 60px;
+}
+
+.service-container i,
+.service-container h3,
+.service-container p {
+    padding: 10px 0;
+}
+
+#portofolio {
+    width: 100%;
+    text-align: center;
+    padding: 70px 0px;
+}
+
+#portofolio h2{
+    margin: 30px 0;
+
+}
+
+.portofolio-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portofolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 320px 320px;
+}
+
+.portofolio-container #item-1{
+    grid-column: 1;
+    grid-row: 1/2 span;
+}
+
+#contact {
+    background-image: url(https://th.bing.com/th/id/OIP.jv8rUgTcz2bBgowACLmxSQHaFL?pid=ImgDet&w=474&h=331&rs=1);
+    width: 100%;
+    padding: 100px 0 400px 0;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.contact-container #name {
+    margin: 20px;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+
+.contact-container #email {
+    margin: 20px;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+button[type="submit"] {
+    color: white;
+    background-color: black;
+    width: 20%;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: row;
+} */
+
+footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+}
+
+.footer-section {
+    width: 40%;
+    margin: 0 auto;
+}

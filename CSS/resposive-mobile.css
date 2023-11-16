@@ -1,0 +1,17 @@
+@media screen and (max-width: 425px){
+    .service-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .service-container .box-icon{
+        width: 40%;
+        margin: auto;
+    }
+
+    .portofolio-container {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-auto-rows: 320px 320px;
+    }
+}
