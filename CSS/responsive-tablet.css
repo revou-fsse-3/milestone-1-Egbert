@@ -47,6 +47,11 @@
         margin-top: 20px;
     }
 
+    article hr {
+        width: 25%;
+        margin: auto;
+    }
+
     .service-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -65,11 +70,12 @@
 
     .contact-container div{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
-    textarea {
-        margin: 20px 0;
+    fieldset {
+        width: 60%;
+        flex-direction: column;
     }
 
     footer {

@@ -1,4 +1,9 @@
 @media screen and (max-width: 425px){
+    article hr {
+        width: 45%;
+        margin: auto;
+    }
+
     .service-container {
         display: grid;
         grid-template-columns: 1fr;

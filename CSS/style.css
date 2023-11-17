@@ -3,17 +3,21 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-family: 'Playfair Display', serif;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: white;
+    transition: all 0.3s;
+
 }
 
 body.dark {
     background-color: #14213d;
     color: white;
+    transition: all 0.3s;
 }
 
 nav {
@@ -22,7 +26,7 @@ nav {
     left: 0;
     height: 70px;
     width: 100%;
-    background-color: #000000;
+    background-color: #091122;
     z-index: 100;
 }
 
@@ -238,60 +242,134 @@ article p {
 }
 
 #contact {
-    background-image: url(https://th.bing.com/th/id/OIP.jv8rUgTcz2bBgowACLmxSQHaFL?pid=ImgDet&w=474&h=331&rs=1);
     width: 100%;
-    padding: 100px 0 400px 0;
+    margin-bottom: 200px;
     text-align: center;
-    color: white;
     background-size: cover;
     background-position-x: center;
 }
 
+#contact h2 {
+    margin-bottom: 30px;
+}
+
 .contact-container {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    width: 80%;
     margin: auto;
+    gap: 20px;
 }
 
 .contact-container #name {
-    margin: 20px;
-    padding: 10px 50px;
-    border-radius: 10px;
+    padding: 10px 40px 10px 0px;
+    width: 80%;
+    border: none;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    transition: all 0.3s;
+}
+
+.contact-container #name:focus {
+    outline: none;
+}
+
+.contact-container #name.dark {
+    border-bottom: 1px solid white;
+    color: white;
+    background: #14213d;
+    transition: all 0.3s;
 }
 
 .contact-container #email {
-    margin: 20px;
-    padding: 10px 50px;
-    border-radius: 10px;
+    padding: 10px 40px 10px 0px;
+    width: 80%;
+    border: none;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    transition: all 0.3s;
 }
 
-textarea {
-    width: 50%;
-    border-radius: 10px;
-    padding: 20px;
+.contact-container #email:focus {
+    outline: none;
+}
+
+.contact-container #email.dark {
+    border-bottom: 1px solid white;
+    color: white;
+    background: #14213d;
+    transition: all 0.3s;
+}
+
+.contact-container #message {
+    padding: 10px 40px 10px 0px;
+    width: 80%;
+    border: none;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    transition: all 0.3s;
+
+}
+
+.contact-container #message:focus {
+    outline: none;
+}
+
+.contact-container #message.dark {
+    border-bottom: 1px solid white;
+    color: white;
+    background: #14213d;
+    transition: all 0.3s;
+
+}
+
+fieldset {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+fieldset .contact-container {
+    margin: 10px 20px ;
+}
+
+.contact-container ul li {
+    text-align: start;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.contact-container ul li i {
+    font-size: 30px;
 }
 
 button[type="submit"] {
     color: white;
-    background-color: black;
-    width: 20%;
+    background-color: #14213d;
+    width: 60%;
     padding: 10px;
     margin: 20px;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+
+
+}
+button[type="submit"].dark {
+    color: black;
+    background-color: white;
+    width: 60%;
 }
 
 footer {
-    background-color: #000000;
+    background-color: #091122;
     color: white;
     width: 100%;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    text-align: center;
     margin: auto;
-}
-
-.footer-section {
-    width: 40%;
-    margin: 0 auto;
 }
