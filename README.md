@@ -6,8 +6,8 @@ Create a company profile website with a website creation theme. I created a prof
 
 ### Access to Quantum Web
 
-- Netlify app : !(https://dancing-bunny-7fc249.netlify.app/)
-- Domain : !(https://gamesplay.cloud/)
+- Netlify app : [Quantum Web](https://dancing-bunny-7fc249.netlify.app/)
+- Domain : [Quantum Web](https://gamesplay.cloud/)
 
 ### Project Description
 
